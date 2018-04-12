@@ -99,80 +99,96 @@
     <!--==========================
       Contact Section
       ============================-->
-      <section id="contact">
-        <div class="container wow fadeInUp" style="margin: 0 auto; background-color: black;">
-          <div class="section-header">
-            <h3 class="section-title">Contato</h3>
-            <p class="section-description">Fale conosco para obter mais informações sobre nosso serviços, estamos a disposição para ajudá-los.</p>
-          </div>
-        </div>
+      <section id="simulador" >
+        <div class="container-fluid" style="margin: 0 auto; display: inline-block; padding: 25px 25px; ">
+          <div class="row">
+            <div class="col-md-6 col-sm-12">
+              <div class="block" style="width:100%;">
+                <h2>Simule seu projeto fotovoltaico</h2> <br><br>
 
 
-        <div class="container wow fadeInUp">
-          <div class="row justify-content-center">
 
-            <div class="col-lg-3 col-md-4">
+                <form method="POST" action="https://formspree.io/suporte@enetec.unb.br">
+                  <div class="form-group">
+                  <select id="sel" name="Estado" value="DF" required>
+                    <option value="AC">AC</option>
+                    <option value="AL">AL</option>
+                    <option value="AP">AP</option>
+                    <option value="AM">AM</option>
+                    <option value="BA">BA</option>
+                    <option value="CE">CE</option>
+                    <option value="DF">DF</option>
+                    <option value="ES">ES</option>
+                    <option value="GO">GO</option>
+                    <option value="MA">MA</option>
+                    <option value="MT">MT</option>
+                    <option value="MS">MS</option>
+                    <option value="MG">MG</option>
+                    <option value="PA">PA </option>
+                    <option value="PB">PB </option>
+                    <option value="PR">PR </option>
+                    <option value="PE">PE</option>
+                    <option value="PI">PI</option>
+                    <option value="RJ">RJ </option>
+                    <option value="RN">RN </option>
+                    <option value="RS">RS</option>
+                    <option value="RO">RO</option>
+                    <option value="RR">RR</option>
+                    <option value="SC">SC</option>
+                    <option value="SP">SP</option>
+                    <option value="SE">SE</option>
+                    <option value="TO">TO</option>
+                  </select>
+                  <input id="name" name="nome" type="text" class="form-control" placeholder="Nome" required/>
+                  <input name="email" id="email" type="email" class="form-control" placeholder="E-mail" required/>
+                  <input id="cons" name="consumo"type="number" class="form-control" placeholder="Digite seu consumo, em kWh" required/>
+                  <input id="cons" name="telefone" type="tel" class="form-control" placeholder="Digite seu telefone(opcional)"/>
+                  <input id="tarifa" name="tarifa"type="text" class="form-control" placeholder="Digite a tarifa da sua região" required/>
 
-              <div class="info">
-                <div>
-                  <i class="fa fa-map-marker"></i>
-                  <p>FUP-UNB<br>
-                  73.345-010 Planaltina</p>
+
+                  <button class="btn btn-default">  <input type="submit" placeholder="Simular" id="simule"/></button>
+
+                  <input type="text" name="_gotcha" style="display:none"/>
+                  <input type="hidden" name="_next" value="#" />
+                  <input type="hidden" name="_language" value= "pt_BR"/>
                 </div>
-
-                <div>
-                  <i class="fa fa-envelope"></i>
-                  <p>embrageaunb@gmail.com</p>
-                </div>
-
-                <div>
-                  <i class="fa fa-phone"></i>
-                  <p>(61) 98432-6781</p>
-                </div>
-              </div>
-
-              <div class="social-links">
-                <a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
-                <a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
-                <a href="#" class="instagram"><i class="fa fa-instagram"></i></a>
-                <a href="#" class="google-plus"><i class="fa fa-google-plus"></i></a>
-                <a href="#" class="linkedin"><i class="fa fa-linkedin"></i></a>
-              </div>
-
-            </div>
-
-            <div class="col-lg-5 col-md-8">
-              <div class="form">
-                <div id="sendmessage">Your message has been sent. Thank you!</div>
-                <div id="errormessage"></div>
-                <form action="" method="post" role="form" class="contactForm">
-                  <div class="form-group">
-                    <input type="text" name="name" class="form-control" id="name" placeholder="Seu Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
-                    <div class="validation"></div>
-                  </div>
-                  <div class="form-group">
-                    <input type="email" class="form-control" name="email" id="email" placeholder="Seu Email" data-rule="email" data-msg="Please enter a valid email" />
-                    <div class="validation"></div>
-                  </div>
-                  <div class="form-group">
-                    <input type="text" class="form-control" name="subject" id="subject" placeholder="Assunto" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
-                    <div class="validation"></div>
-                  </div>
-                  <div class="form-group">
-                    <textarea class="form-control" name="message" rows="5" data-rule="required" data-msg="Please write something for us" placeholder="Digite aqui sua mensagem"></textarea>
-                    <div class="validation"></div>
-                  </div>
-                  <div class="text-center"><button type="submit">Enviar mensagem</button></div>
                 </form>
+
+                <div style="display:none" id="div-simulador">
+                  <p id="texto-nome"></p>
+                  <p id="texto-placas">
+
+                  </p>
+                  <p id="texto-custo">
+                  </p>
+                  <h3>
+                    Gráfico de kWh x mês
+                  </h3>
+                  <canvas id="grafico" width="560%" height="200%" style=" border:1px solid #000000;">
+                  </canvas>
+                  <p>
+                    Lembrando que essas medidas são uma estimativa
+                  </p>
+                  <a href="../contact/index.html">
+                    Para um projeto exato, fale conosco!
+                  </a>
+                </div>
               </div>
             </div>
 
+
+
+
+
+
           </div>
-
         </div>
-      </section><!-- #contact -->
 
-    </main>
+      </div>
+    </div>
+  </section><!-- #contact -->
+
+</main>
 
   <!--==========================
     Footer
@@ -233,5 +249,9 @@
     })();
   </script>
   <!--End of Tawk.to Script-->
+  <script src="simulador.js">
+  </script>
+  <script src="mostrar.js">
+  </script>
 </body>
 </html>
