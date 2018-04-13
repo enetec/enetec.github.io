@@ -260,6 +260,11 @@ h1, h2, h3, h4, h5, h6 {
 
 .nav-menu ul li {
   min-width: 180px;
+
+}
+.nav-menu a{
+  
+  cursor: pointer;
 }
 
 /* Nav Menu Arrows */
@@ -505,7 +510,7 @@ background: url(../img/about-img.jpg);
 
 #about .container{
 height: 100%;
- background: rgba(0,0,0,0.3);
+ background: rgba(0,0,0,0.2);
   margin-bottom: 10px;}
 
 #about .about-container .content {
@@ -526,7 +531,7 @@ height: 100%;
 
 #about .about-container p {
   line-height: 26px;
-  text-shadow: 2px 2px 2px black;
+  text-shadow: 1px 0px 1px black;
 
 }
 
