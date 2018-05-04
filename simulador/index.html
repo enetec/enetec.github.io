@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="utf-8">
   <title>ENETEC - Consultoria</title>
@@ -32,9 +33,9 @@
     License: https://bootstrapmade.com/license/
     ======================================================= -->
 
-  </head>
+</head>
 
-  <body>
+<body>
 
   <!--==========================
   Header
@@ -43,44 +44,73 @@
     <div class="container">
 
       <div id="logo" class="pull-left">
-        <a href="#hero"><img id="myImage" src="img/logo-header.png" alt="" title="" /></img></a>
+        <a href="#hero">
+          <img id="myImage" src="img/logo-header.png" alt="" title="" /></img>
+        </a>
         <!-- Uncomment below if you prefer to use a text logo -->
         <!--<h1><a href="#hero">Regna</a></h1>-->
       </div>
 
       <nav id="nav-menu-container">
         <ul class="nav-menu">
-          <li><a href="../index.html#hero">Início</a></li>
-          <li  class="menu-active"><a href="../index.html#services">Simulador Placas Solares</a></li>
-          <li><a href="../port.html">Portfólio</a></li>
-          <li class="menu-has-children"><a href="">Nossos Serviços</a>
+          <li>
+            <a href="../index.html">Início</a>
+          </li>
+          <li class="menu-active">
+            <a href="../index.html#services">Simulador Placas Solares</a>
+          </li>
+          <li>
+            <a href="../port.html">Portfólio</a>
+          </li>
+          <li class="menu-has-children">
+            <a href="">Nossos Serviços</a>
             <ul>
-              <li><a href="#">Energia Solar Fotovoltaica</a></li>
-             
-              <li><a href="#">Sistemas de Proteção a Descargas Atmosféricas</a></li>
-              <li><a href="#">Instalações Elétricas</a></li>
-              <li><a href="#">Termografia</a></li>
-              <li><a href="#">Eficiência Energética</a></li>
+              <li>
+                <a href="#">Energia Solar Fotovoltaica</a>
+              </li>
+
+              <li>
+                <a href="#">Sistemas de Proteção a Descargas Atmosféricas</a>
+              </li>
+              <li>
+                <a href="#">Instalações Elétricas</a>
+              </li>
+              <li>
+                <a href="#">Termografia</a>
+              </li>
+              <li>
+                <a href="#">Eficiência Energética</a>
+              </li>
             </ul>
           </li>
-          <li ><a href="../contact.html">Contato</a></li>
+          <li>
+            <a href="../blog">Blog</a>
+          </li>
+          <li>
+            <a href="../contact.html">Contato</a>
+          </li>
         </ul>
-      </nav><!-- #nav-menu-container -->
+      </nav>
+      <!-- #nav-menu-container -->
     </div>
-  </header><!-- #header -->
+  </header>
+  <!-- #header -->
 
   <!--==========================
     Hero Section
     ============================-->
-    <section id="hero">
-      <div class="hero-container">
+  <section id="hero">
+    <div class="hero-container">
 
-        <h2> </h2>
-        <p> <a href="#simulador" class="btn-get-started">Experimente nosso simulador gratuito!</a></p>
-      </div>
-    </section><!-- #hero -->
+      <h2> </h2>
+      <p>
+        <a href="#simulador" class="btn-get-started">Experimente nosso simulador gratuito!</a>
+      </p>
+    </div>
+  </section>
+  <!-- #hero -->
 
-    <main id="main">
+  <main id="main">
 
     <!--==========================
       About Us Section
@@ -90,21 +120,24 @@
     <!--==========================
       Contact Section
       ============================-->
-      <section id="simulador" >
-        <div class="container-fluid" style="padding: 25px;  margin: 0;
+    <section id="simulador">
+      <div class="container-fluid" style="padding: 25px;  margin: 0;
  position: relative;
     top: 50%;
     left: 25%;
     margin-right: -50%;">
-          <div class="row">
-            <div class="col-md-6 col-sm-12">
-              <div class="block" style="width:100%;">
-                <h2>Simule seu projeto fotovoltaico</h2> <br><br>
+        <div class="row">
+          <div class="col-md-6 col-sm-12">
+            <div class="block" style="width:100%;">
+              <h2>Simule seu projeto fotovoltaico</h2>
+              <br>
+              <br>
 
 
 
-                <form method="POST" action="https://formspree.io/victor.silva@enetec.unb.br">
-                Estado  <div class="form-group">
+              <form method="POST" action="https://formspree.io/victor.silva@enetec.unb.br">
+                Estado
+                <div class="form-group">
                   <select id="sel" name="Estado" value="DF" style="margin-bottom: 10px;" required>
                     <option value="AC">AC</option>
                     <option value="AL">AL</option>
@@ -136,82 +169,89 @@
                   </select>
                   <input id="name" name="nome" type="text" class="form-control" placeholder="Nome" required/>
                   <input name="email" id="email" type="email" class="form-control" placeholder="E-mail" required/>
-                  <input id="cons" name="consumo"type="number" class="form-control" placeholder="Digite seu consumo, em kWh" required/>
-                  <input id="cons" name="telefone" type="tel" class="form-control" placeholder="Digite seu telefone(opcional)"/>
-                  <input id="tarifa" name="tarifa"type="text" class="form-control" placeholder="Digite a tarifa da sua região" required/>
+                  <input id="cons" name="consumo" type="number" class="form-control" placeholder="Digite seu consumo, em kWh" required/>
+                  <input id="cons" name="telefone" type="tel" class="form-control" placeholder="Digite seu telefone(opcional)" />
+                  <input id="tarifa" name="tarifa" type="text" class="form-control" placeholder="Digite a tarifa da sua região" required/>
 
 
-                  <button class="btn btn-default">  <input type="submit" placeholder="Simular" id="simule"/></button>
+                  <button class="btn btn-default">
+                    <input type="submit" placeholder="Simular" id="simule" />
+                  </button>
 
-                  <input type="text" name="_gotcha" style="display:none"/>
+                  <input type="text" name="_gotcha" style="display:none" />
                   <input type="hidden" name="_next" value="#" />
-                  <input type="hidden" name="_language" value= "pt_BR"/>
+                  <input type="hidden" name="_language" value="pt_BR" />
                 </div>
-                </form>
+              </form>
 
-                <div style="display:none" id="div-simulador">
-                  <p id="texto-nome"></p>
-                  <p id="texto-placas">
+              <div style="display:none" id="div-simulador">
+                <p id="texto-nome"></p>
+                <p id="texto-placas">
 
-                  </p>
-                  <p id="texto-custo">
-                  </p>
-                  <h3>
-                    Gráfico de kWh x mês
-                  </h3>
-                  <canvas id="grafico" width="560%" height="200%" style=" border:1px solid #000000;">
-                  </canvas>
-                  <p>
-                    Lembrando que essas medidas são uma estimativa
-                  </p>
-                  <a href="../contact/index.html">
-                    Para um projeto exato, fale conosco!
-                  </a>
-                </div>
+                </p>
+                <p id="texto-custo">
+                </p>
+                <h3>
+                  Gráfico de kWh x mês
+                </h3>
+                <canvas id="grafico" width="560%" height="200%" style=" border:1px solid #000000;">
+                </canvas>
+                <p>
+                  Lembrando que essas medidas são uma estimativa
+                </p>
+                <a href="../contact/index.html">
+                  Para um projeto exato, fale conosco!
+                </a>
               </div>
             </div>
-
-
-
-
-
-
           </div>
+
+
+
+
+
+
         </div>
+      </div>
 
       </div>
-    </div>
-  </section><!-- #contact -->
+      </div>
+    </section>
+    <!-- #contact -->
 
-</main>
+  </main>
 
   <!--==========================
     Footer
     ============================-->
-    <footer id="footer">
-      <div class="footer-top">
-        <div class="container">
-
-        </div>
-      </div>
-
+  <footer id="footer">
+    <div class="footer-top">
       <div class="container">
-        <div class="copyright">
-          &copy; Copyright <strong>inSite</strong>. All Rights Reserved
-        </div>
-        <div class="credits">
+
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="copyright">
+        &copy; Copyright
+        <strong>inSite</strong>. All Rights Reserved
+      </div>
+      <div class="credits">
         <!--
           All the links in the footer should remain intact.
           You can delete the links only if you purchased the pro version.
           Licensing information: https://bootstrapmade.com/license/
           Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/buy/?theme=Regna
         -->
-        Boostrap & inSite made Tampate 
+        Boostrap & inSite made Tampate
       </div>
     </div>
-  </footer><!-- #footer -->
+  </footer>
+  <!-- #footer -->
 
-  <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
+  <a href="#" class="back-to-top">
+    <i class="fa fa-chevron-up"></i>
+  </a>
 
   <!-- JavaScript Libraries -->
   <script src="../lib/jquery/jquery.min.js"></script>
@@ -233,14 +273,14 @@
   <script src="../js/main.js"></script>
   <!--Start of Tawk.to Script-->
   <script type="text/javascript">
-    var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
-    (function(){
-      var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
-      s1.async=true;
-      s1.src='https://embed.tawk.to/5a50e988d7591465c7068629/default';
-      s1.charset='UTF-8';
-      s1.setAttribute('crossorigin','*');
-      s0.parentNode.insertBefore(s1,s0);
+    var Tawk_API = Tawk_API || {}, Tawk_LoadStart = new Date();
+    (function () {
+      var s1 = document.createElement("script"), s0 = document.getElementsByTagName("script")[0];
+      s1.async = true;
+      s1.src = 'https://embed.tawk.to/5a50e988d7591465c7068629/default';
+      s1.charset = 'UTF-8';
+      s1.setAttribute('crossorigin', '*');
+      s0.parentNode.insertBefore(s1, s0);
     })();
   </script>
   <!--End of Tawk.to Script-->
@@ -249,4 +289,5 @@
   <script src="mostrar.js">
   </script>
 </body>
+
 </html>
