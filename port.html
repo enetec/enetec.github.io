@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="utf-8">
   <title>ENETEC - Consultoria</title>
@@ -15,7 +16,7 @@
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Poppins:300,400,500,700" rel="stylesheet">
 
   <!-- Bootstrap CSS File -->
-  <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 
   <!-- Libraries CSS Files -->
   <link href="lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">
@@ -43,185 +44,237 @@
     <div class="container">
 
       <div id="logo" class="pull-left">
-        <a href="#hero"><img id="myImage" src="img/logo-header.png" alt="" title="" /></img></a>
+        <a href="#hero">
+          <img id="myImage" src="img/logo-header.png" alt="" title="" /></img>
+        </a>
         <!-- Uncomment below if you prefer to use a text logo -->
         <!--<h1><a href="#hero">Regna</a></h1>-->
       </div>
 
       <nav id="nav-menu-container">
         <ul class="nav-menu">
-          <li ><a href="index.html">Início</a></li>
-          <li><a href="index.html#about">Sobre nós</a></li>
-          <li><a href="index.html#services">Nossos Serviços</a></li>
-          <li class="menu-active"><a href="#">Portfólio</a></li>
-         <li class="menu-has-children"><a href="">Nossos Serviços</a>
+          <li>
+            <a href="index.html">Início</a>
+          </li>
+          <li>
+            <a href="index.html#services">Nossos Serviços</a>
+          </li>
+          <li class="menu-active">
+            <a href="#">Portfólio</a>
+          </li>
+          <li class="menu-has-children">
+            <a href="">Nossos Serviços</a>
             <ul>
-              <li><a href="#">Energia Solar Fotovoltaica</a></li>
-             
-              <li><a href="#">Sistemas de Proteção a Descargas Atmosféricas</a></li>
-              <li><a href="#">Instalações Elétricas</a></li>
-              <li><a href="#">Termografia</a></li>
-              <li><a href="#">Eficiência Energética</a></li>
+              <li>
+                <a href="#">Energia Solar Fotovoltaica</a>
+              </li>
+
+              <li>
+                <a href="#">Sistemas de Proteção a Descargas Atmosféricas</a>
+              </li>
+              <li>
+                <a href="#">Instalações Elétricas</a>
+              </li>
+              <li>
+                <a href="#">Termografia</a>
+              </li>
+              <li>
+                <a href="#">Eficiência Energética</a>
+              </li>
             </ul>
           </li>
-          <li ><a href="contact.html">Contato</a></li>
+          <li>
+            <a href="contact.html">Contato</a>
+          </li>
         </ul>
-      </nav><!-- #nav-menu-container -->
+      </nav>
+      <!-- #nav-menu-container -->
     </div>
-  </header><!-- #header -->
+  </header>
+  <!-- #header -->
 
   <!--==========================
     Hero Section
   ============================-->
-<br><br><br><br>
+  <br>
+  <br>
+  <br>
+  <br>
 
-    <!--==========================
+  <!--==========================
       Portfolio Section
     ============================-->
-    <section id="portfolio">
-      <div class="container wow fadeInUp">
-        <div class="section-header">
-          <h3 class="section-title">Portfolio</h3>
-          <p class="section-description">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque</p>
+  <section id="portfolio">
+    <div class="container wow fadeInUp">
+      <div class="section-header">
+        <h3 class="section-title">Portfolio</h3>
+        <p class="section-description">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque</p>
+      </div>
+      <div class="row">
+
+        <div class="col-lg-12">
+          <ul id="portfolio-flters">
+            <li data-filter=".filter-app, .filter-card, .filter-logo, .filter-web" class="filter-active">Todos</li>
+            <li data-filter=".filter-app">Eficiência Energética</li>
+            <li data-filter=".filter-card">Energia Solar</li>
+            <li data-filter=".filter-logo">Instalações elétricas</li>
+            <li data-filter=".filter-web">Sistemas de proteção a descargas atmosféricas</li>
+          </ul>
         </div>
-        <div class="row">
+      </div>
 
-          <div class="col-lg-12">
-            <ul id="portfolio-flters">
-              <li data-filter=".filter-app, .filter-card, .filter-logo, .filter-web" class="filter-active">Todos</li>
-              <li data-filter=".filter-app">Eficiência Energética</li>
-              <li data-filter=".filter-card">Energia Solar</li>
-              <li data-filter=".filter-logo">Instalações elétricas</li>
-              <li data-filter=".filter-web">Sistemas de proteção a descargas atmosféricas</li>
-            </ul>
+      
+      <!-- Projeto 1 - Eficiência energiética -->
+      <!-- Trigger-->
+      <div class="row" id="portfolio-wrapper">
+        <div class="col-lg-3 col-md-6 portfolio-item filter-app">
+          <a data-toggle="modal" href="#myModal">
+            <img src="img/portfolio/app1.jpg" alt="">
+            <div class="details">
+              <h4>App 1</h4>
+              <span>Alored dono par</span>
+            </div>
+          </a>
+        </div>
+        
+        <!--Modal projeto 1-->
+        <div class="modal fade" id="myModal" role="dialog">
+          <div class="modal-dialog">
+
+            <!-- Modal content-->
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title">Modal Header</h4>
+              </div>
+              <div class="modal-body">
+                <p>Some text in the modal.</p>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+              </div>
+            </div>
+
           </div>
         </div>
+        <!-- Final Projeto 1-->
 
-        <div class="row" id="portfolio-wrapper">
-          <div class="col-lg-3 col-md-6 portfolio-item filter-app">
-            <a href="">
-              <img src="img/portfolio/app1.jpg" alt="">
-              <div class="details">
-                <h4>App 1</h4>
-                <span>Alored dono par</span>
-              </div>
-            </a>
-          </div>
 
-          <div class="col-lg-3 col-md-6 portfolio-item filter-web">
-            <a href="">
-              <img src="img/portfolio/web2.jpg" alt="">
-              <div class="details">
-                <h4>Web 2</h4>
-                <span>Alored dono par</span>
-              </div>
-            </a>
-          </div>
+        <div class="col-lg-3 col-md-6 portfolio-item filter-web">
+          <a href="">
+            <img src="img/portfolio/web2.jpg" alt="">
+            <div class="details">
+              <h4>Web 2</h4>
+              <span>Alored dono par</span>
+            </div>
+          </a>
+        </div>
 
-          <div class="col-lg-3 col-md-6 portfolio-item filter-app">
-            <a href="">
-              <img src="img/portfolio/app3.jpg" alt="">
-              <div class="details">
-                <h4>App 3</h4>
-                <span>Alored dono par</span>
-              </div>
-            </a>
-          </div>
+        <div class="col-lg-3 col-md-6 portfolio-item filter-app">
+          <a href="">
+            <img src="img/portfolio/app3.jpg" alt="">
+            <div class="details">
+              <h4>App 3</h4>
+              <span>Alored dono par</span>
+            </div>
+          </a>
+        </div>
 
-          <div class="col-lg-3 col-md-6 portfolio-item filter-card">
-            <a href="">
-              <img src="img/portfolio/card1.jpg" alt="">
-              <div class="details">
-                <h4>Card 1</h4>
-                <span>Alored dono par</span>
-              </div>
-            </a>
-          </div>
+        <div class="col-lg-3 col-md-6 portfolio-item filter-card">
+          <a href="">
+            <img src="img/portfolio/card1.jpg" alt="">
+            <div class="details">
+              <h4>Card 1</h4>
+              <span>Alored dono par</span>
+            </div>
+          </a>
+        </div>
 
-          <div class="col-lg-3 col-md-6 portfolio-item filter-card">
-            <a href="">
-              <img src="img/portfolio/card2.jpg" alt="">
-              <div class="details">
-                <h4>Card 2</h4>
-                <span>Alored dono par</span>
-              </div>
-            </a>
-          </div>
+        <div class="col-lg-3 col-md-6 portfolio-item filter-card">
+          <a href="">
+            <img src="img/portfolio/card2.jpg" alt="">
+            <div class="details">
+              <h4>Card 2</h4>
+              <span>Alored dono par</span>
+            </div>
+          </a>
+        </div>
 
-          <div class="col-lg-3 col-md-6 portfolio-item filter-web">
-            <a href="">
-              <img src="img/portfolio/web3.jpg" alt="">
-              <div class="details">
-                <h4>Web 3</h4>
-                <span>Alored dono par</span>
-              </div>
-            </a>
-          </div>
+        <div class="col-lg-3 col-md-6 portfolio-item filter-web">
+          <a href="">
+            <img src="img/portfolio/web3.jpg" alt="">
+            <div class="details">
+              <h4>Web 3</h4>
+              <span>Alored dono par</span>
+            </div>
+          </a>
+        </div>
 
-          <div class="col-lg-3 col-md-6 portfolio-item filter-card">
-            <a href="">
-              <img src="img/portfolio/card3.jpg" alt="">
-              <div class="details">
-                <h4>Card 3</h4>
-                <span>Alored dono par</span>
-              </div>
-            </a>
-          </div>
+        <div class="col-lg-3 col-md-6 portfolio-item filter-card">
+          <a href="">
+            <img src="img/portfolio/card3.jpg" alt="">
+            <div class="details">
+              <h4>Card 3</h4>
+              <span>Alored dono par</span>
+            </div>
+          </a>
+        </div>
 
-          <div class="col-lg-3 col-md-6 portfolio-item filter-app">
-            <a href="">
-              <img src="img/portfolio/app2.jpg" alt="">
-              <div class="details">
-                <h4>App 2</h4>
-                <span>Alored dono par</span>
-              </div>
-            </a>
-          </div>
+        <div class="col-lg-3 col-md-6 portfolio-item filter-app">
+          <a href="">
+            <img src="img/portfolio/app2.jpg" alt="">
+            <div class="details">
+              <h4>App 2</h4>
+              <span>Alored dono par</span>
+            </div>
+          </a>
+        </div>
 
-          <div class="col-lg-3 col-md-6 portfolio-item filter-logo">
-            <a href="">
-              <img src="img/portfolio/logo1.jpg" alt="">
-              <div class="details">
-                <h4>Logo 1</h4>
-                <span>Alored dono par</span>
-              </div>
-            </a>
-          </div>
+        <div class="col-lg-3 col-md-6 portfolio-item filter-logo">
+          <a href="">
+            <img src="img/portfolio/logo1.jpg" alt="">
+            <div class="details">
+              <h4>Logo 1</h4>
+              <span>Alored dono par</span>
+            </div>
+          </a>
+        </div>
 
-          <div class="col-lg-3 col-md-6 portfolio-item filter-logo">
-            <a href="">
-              <img src="img/portfolio/logo3.jpg" alt="">
-              <div class="details">
-                <h4>Logo 3</h4>
-                <span>Alored dono par</span>
-              </div>
-            </a>
-          </div>
+        <div class="col-lg-3 col-md-6 portfolio-item filter-logo">
+          <a href="">
+            <img src="img/portfolio/logo3.jpg" alt="">
+            <div class="details">
+              <h4>Logo 3</h4>
+              <span>Alored dono par</span>
+            </div>
+          </a>
+        </div>
 
-          <div class="col-lg-3 col-md-6 portfolio-item filter-web">
-            <a href="">
-              <img src="img/portfolio/web1.jpg" alt="">
-              <div class="details">
-                <h4>Web 1</h4>
-                <span>Alored dono par</span>
-              </div>
-            </a>
-          </div>
+        <div class="col-lg-3 col-md-6 portfolio-item filter-web">
+          <a href="">
+            <img src="img/portfolio/web1.jpg" alt="">
+            <div class="details">
+              <h4>Web 1</h4>
+              <span>Alored dono par</span>
+            </div>
+          </a>
+        </div>
 
-          <div class="col-lg-3 col-md-6 portfolio-item filter-logo">
-            <a href="">
-              <img src="img/portfolio/logo2.jpg" alt="">
-              <div class="details">
-                <h4>Logo 2</h4>
-                <span>Alored dono par</span>
-              </div>
-            </a>
-          </div>
-
+        <div class="col-lg-3 col-md-6 portfolio-item filter-logo">
+          <a href="">
+            <img src="img/portfolio/logo2.jpg" alt="">
+            <div class="details">
+              <h4>Logo 2</h4>
+              <span>Alored dono par</span>
+            </div>
+          </a>
         </div>
 
       </div>
-    </section><!-- #portfolio -->
+
+    </div>
+  </section>
+  <!-- #portfolio -->
 
 
   </main>
@@ -238,7 +291,8 @@
 
     <div class="container">
       <div class="copyright">
-        &copy; Copyright <strong>inSite</strong>. All Rights Reserved
+        &copy; Copyright
+        <strong>inSite</strong>. All Rights Reserved
       </div>
       <div class="credits">
         <!--
@@ -247,21 +301,22 @@
           Licensing information: https://bootstrapmade.com/license/
           Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/buy/?theme=Regna
         -->
-        Boostrap & inSite made Tampate 
+        Boostrap & inSite made Tampate
       </div>
     </div>
-  </footer><!-- #footer -->
+  </footer>
+  <!-- #footer -->
 
-  <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
+  <a href="#" class="back-to-top">
+    <i class="fa fa-chevron-up"></i>
+  </a>
 
   <!-- JavaScript Libraries -->
-  <script src="lib/jquery/jquery.min.js"></script>
-  <script src="lib/jquery/jquery-migrate.min.js"></script>
-  <script src="lib/bootstrap/js/bootstrap.bundle.min.js"></script>
   <script src="lib/easing/easing.min.js"></script>
   <script src="lib/wow/wow.min.js"></script>
   <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD8HeI8o-c1NppZA-92oYlXakhDPYR7XMY"></script>
-
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   <script src="lib/waypoints/waypoints.min.js"></script>
   <script src="lib/counterup/counterup.min.js"></script>
   <script src="lib/superfish/hoverIntent.js"></script>
@@ -272,18 +327,19 @@
 
   <!-- Template Main Javascript File -->
   <script src="js/main.js"></script>
-<!--Start of Tawk.to Script-->
-<script type="text/javascript">
-var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
-(function(){
-var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
-s1.async=true;
-s1.src='https://embed.tawk.to/5a50e988d7591465c7068629/default';
-s1.charset='UTF-8';
-s1.setAttribute('crossorigin','*');
-s0.parentNode.insertBefore(s1,s0);
-})();
-</script>
-<!--End of Tawk.to Script-->
+  <!--Start of Tawk.to Script-->
+  <script type="text/javascript">
+    var Tawk_API = Tawk_API || {}, Tawk_LoadStart = new Date();
+    (function () {
+      var s1 = document.createElement("script"), s0 = document.getElementsByTagName("script")[0];
+      s1.async = true;
+      s1.src = 'https://embed.tawk.to/5a50e988d7591465c7068629/default';
+      s1.charset = 'UTF-8';
+      s1.setAttribute('crossorigin', '*');
+      s0.parentNode.insertBefore(s1, s0);
+    })();
+  </script>
+  <!--End of Tawk.to Script-->
 </body>
+
 </html>
