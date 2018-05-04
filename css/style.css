@@ -212,14 +212,14 @@ h1, h2, h3, h4, h5, h6 {
   border-radius: 50px;
   transition: 0.5s;
   margin: 10px;
-  border: 2px solid #2dc997;
+  border: 2px solid #1f3b1d;
   color: black;
   background: white;
 }
 
 #hero .btn-get-started:hover {
-  background: #2dc997;
-  border: 2px solid #2dc997;
+  background: #1f3b1d;
+  border: 2px solid #1f3b1d;
   color: white;
 }
 
@@ -338,7 +338,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .nav-menu ul {
-  margin: 4px 0 0 0;
+  margin: 0  0 0 0;
   border: 1px solid #e7e7e7;
 }
 
@@ -589,7 +589,7 @@ height: 100%;
 #facts .counters span {
   font-size: 48px;
   display: block;
-  color: #2dc997;
+  color: #1f3b1d;
 }
 
 #facts .counters p {
@@ -615,8 +615,9 @@ height: 100%;
 }
 
 #facts .cta-btn:hover {
-  background: #2dc997;
-  border: 2px solid #2dc997;
+  background: #1f3b1d;
+  border: 2px solid #1f3b1d;
+  color: white;
 }
 /* Services Section
 --------------------------------*/
@@ -648,8 +649,8 @@ height: 100%;
 
 #services .icon a {
   display: inline-block;
-  background: #2dc997;
-  border: 2px solid #2dc997;
+  background:#1f3b1d;
+  border: 2px solid #1f3b1d;
   padding: 16px;
   border-radius: 50%;
   transition: 0.3s;
@@ -661,11 +662,11 @@ height: 100%;
 }
 
 #services .box:hover .icon i {
-  color: #2dc997;
+  color: #1f3b1d;
 }
 
 #services .box:hover .icon a {
-  color: #2dc997;
+  color: #1f3b1d;
   background: #fff;
 }
 
@@ -691,7 +692,7 @@ height: 100%;
 /* Call To Action Section
 --------------------------------*/
 #call-to-action {
-  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.2)), url(../img/try.jpg) fixed center center;
+  background:  rgb(31, 59, 29) fixed center center;
   background-size: cover;
   padding: 80px 0;
 }
