@@ -53,39 +53,41 @@
 
       <nav id="nav-menu-container">
         <ul class="nav-menu">
-          <li>
-            <a href="index.html">Início</a>
-          </li>
-          <li>
-            <a href="index.html#services">Nossos Serviços</a>
-          </li>
-          <li class="menu-active">
-            <a href="#">Portfólio</a>
-          </li>
-          <li class="menu-has-children">
-            <a href="">Nossos Serviços</a>
-            <ul>
-              <li>
-                <a href="#">Energia Solar Fotovoltaica</a>
-              </li>
 
-              <li>
-                <a href="#">Sistemas de Proteção a Descargas Atmosféricas</a>
-              </li>
-              <li>
-                <a href="#">Instalações Elétricas</a>
-              </li>
-              <li>
-                <a href="#">Termografia</a>
-              </li>
-              <li>
-                <a href="#">Eficiência Energética</a>
-              </li>
+      <li class="menu-has-children"><a href="">Serviços</a>
+        <ul>
+          <li class="menu-has-children"><a href="">Fotovoltaica</a>
+            <ul>
+            <li><a href="fotovoltaica/index.html">Simulador de Placas Solares</a></li>
+
+              <li><a href="fotovoltaica/foto.html">Vantagens</a></li>
             </ul>
+              <li class="menu-has-children"><a href="">Instalações</a>
+                <ul>
+                                <li><a href="instalacoes/instala.html">Projetos</a></li>
+              <li><a href="instalacoes/spda.html">Sistemas de proteção a Descarga atmosférica</a></li>
+                      <li><a href="instalacoes/normas.html">Adequação às normas</a></li>
+            </ul>
+
+            <li class="menu-has-children"><a href="">Eficiência</a>
+              <ul>
+                <li><a href="eficiencia/lumino.html">Luminotécnico</a></li>
+            <li><a href="eficiencia/analise.html">Análise de conta de luz</a></li>
+            <li><a href="eficiencia/analise.html">Análise de qualidade de energia</a></li>
+          </ul>
           </li>
-          <li>
-            <a href="contact.html">Contato</a>
-          </li>
+
+  </ul>
+  <li class="menu-has-children"><a href="">E-books</a>
+    <ul>
+  <li><a href="landing/index.html">8 ideias de como economizar em casa</a></li>
+  <li><a href="landing2/index.html">Guia de iluminação</a></li>
+  <li><a href="landing/index3.html">Como proteger suas intalações elétricas</a></li>
+  </ul>
+  </li>
+  <li><a href="port.html">Portfólio</a></li>
+  <li><a href="port.html">Acompanhamento</a></li>
+          <li><a href="contact.html">Contato</a></li>
         </ul>
       </nav>
       <!-- #nav-menu-container -->
@@ -104,54 +106,62 @@
   <!--==========================
       Portfolio Section
     ============================-->
-  <section id="portfolio">
-    <div class="container wow fadeInUp">
-      <div class="section-header">
-        <h3 class="section-title">Portfolio</h3>
-        <p class="section-description">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque</p>
-      </div>
-      <div class="row">
+    <section id="portfolio">
+      <div id="projetos">
 
-        <div class="col-lg-12">
-          <ul id="portfolio-flters">
-            <li data-filter=".filter-app, .filter-card, .filter-logo, .filter-web" class="filter-active">Todos</li>
-            <li data-filter=".filter-app">Eficiência Energética</li>
-            <li data-filter=".filter-card">Energia Solar</li>
-            <li data-filter=".filter-logo">Instalações elétricas</li>
-            <li data-filter=".filter-web">Sistemas de proteção a descargas atmosféricas</li>
-          </ul>
+          <div id="modal-header">
+              <span id="btn"></span>
+              <h2 style="text-align:center">Projetos</h2>
+          </div>
+          <div id="body" style="padding:2x 16px">
+          </div>
+
+
+      </div>
+      <div class="container wow fadeInUp">
+        <div class="section-header">
+          <h3 class="section-title">Portfolio</h3>
+          <p class="section-description">Aqui estão nossos principais projetos</p>
+        </div>
+        <div class="row">
+
+          <div class="col-lg-12">
+            <ul id="portfolio-flters">
+              <li data-filter=".filter-app, .filter-card, .filter-logo, .filter-web" class="filter-active">Todos</li>
+              <li data-filter=".filter-app">Eficiência Energética</li>
+              <li data-filter=".filter-card">Energia Solar</li>
+              <li data-filter=".filter-logo">Instalações elétricas</li>
+              <li data-filter=".filter-web">Sistemas de proteção a descargas atmosféricas</li>
+            </ul>
+          </div>
         </div>
       </div>
 
-      
-      <!-- Projeto 1 - Eficiência energiética -->
-      <!-- Trigger-->
-      <div class="row" id="portfolio-wrapper">
-        <div class="col-lg-3 col-md-6 portfolio-item filter-app">
-          <a data-toggle="modal" href="#myModal">
-            <img src="img/portfolio/app1.jpg" alt="">
-            <div class="details">
-              <h4>App 1</h4>
-              <span>Alored dono par</span>
-            </div>
-          </a>
-        </div>
-        
-        <!--Modal projeto 1-->
-        <div class="modal fade" id="myModal" role="dialog">
-          <div class="modal-dialog">
+        <div class="row" id="portfolio-wrapper">
+          <div class="col-lg-3 col-md-6 portfolio-item filter-app" id="efi1">
+              <img src="img/portfolio/app1.jpg" alt="">
+              <div class="details">
+                <h4>Guarda Presidencial</h4>
 
-            <!-- Modal content-->
-            <div class="modal-content">
-              <div class="modal-header">
-                <button type="button" class="close" data-dismiss="modal">&times;</button>
-                <h4 class="modal-title">Modal Header</h4>
               </div>
-              <div class="modal-body">
-                <p>Some text in the modal.</p>
+          </div>
+
+          <div class="col-lg-3 col-md-6 portfolio-item filter-app"  id="efi2">
+
+              <img src="img/portfolio/app2.jpg" alt="">
+              <div class="details">
+                <h4>ACM</h4>
+
               </div>
-              <div class="modal-footer">
-                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+
+          </div>
+
+
+          <div class="col-lg-3 col-md-6 portfolio-item filter-app"  id="efi3">
+            <a href="">
+              <img src="img/portfolio/app3.jpg" alt="">
+              <div class="details">
+                <h4>Escola CED</h4>
               </div>
             </div>
 
@@ -276,18 +286,19 @@
   </section>
   <!-- #portfolio -->
 
+    </section><!-- #portfolio -->
 
   </main>
 
   <!--==========================
     Footer
-  ============================-->
-  <footer id="footer">
-    <div class="footer-top">
-      <div class="container">
+    ============================-->
+    <footer id="footer">
+      <div class="footer-top">
+        <div class="container">
 
+        </div>
       </div>
-    </div>
 
     <div class="container">
       <div class="copyright">
