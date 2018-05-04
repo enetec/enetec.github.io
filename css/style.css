@@ -896,7 +896,7 @@ height: 100%;
 
 #contact .info i {
   font-size: 32px;
-  color: #2dc997;
+  color: #165b22;
   float: left;
 }
 
@@ -973,7 +973,7 @@ height: 100%;
 }
 
 #contact .form button[type="submit"] {
-  background: #2dc997;
+  background: #165b22;
   border: 0;
   padding: 10px 24px;
   color: #fff;
