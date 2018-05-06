@@ -693,7 +693,7 @@ height: 100%;
 /* Call To Action Section
 --------------------------------*/
 #call-to-action {
-  background:  rgba(31, 59, 29, 0.9) fixed center center;
+  background:  rgba(66,120,130) fixed center center;
   background-size: cover;
   padding: 80px 0;
 }
