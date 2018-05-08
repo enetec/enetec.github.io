@@ -17,6 +17,8 @@
 
   <!-- Bootstrap CSS File -->
   <link href="../lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="../css/forms.css" rel="stylesheet">
+  <link href="../css/util.css" rel="stylesheet">
 
   <!-- Libraries CSS Files -->
   <link href="../lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">
@@ -114,7 +116,7 @@
               </ul>
             </li>
             <li>
-                <!-- <a href="../port.html">Portfólio</a> -->
+              <!-- <a href="../port.html">Portfólio</a> -->
             </li>
             <li>
               <a href="../blog">Blog</a>
@@ -154,98 +156,118 @@
       Contact Section
       ============================-->
     <section id="simulador">
-      <div class="container-fluid" style="padding: 25px;  margin: 0;
- position: relative;
-    top: 50%;
-    left: 25%;
-    margin-right: -50%;
+      <div class="bg-contact2" style="
     text-align: center;">
-        <div class="row">
-          <div class="col-md-6 col-sm-12">
-            <div class="block" style="width:100%;">
-              <h2>Simule seu projeto fotovoltaico</h2>
-              <br>
-              <br>
+        <div class="container-contact2">
+          <div class="wrap-contact2">
+            <div class="row">
+              <div class=" col-sm-12">
+                <div class="block" style="width:100%;">
+                  <h2>Simule seu projeto fotovoltaico</h2>
+                  <br>
+                  <br>
 
 
 
-              <form method="POST" action="https://formspree.io/victor.silva@enetec.unb.br">
-                Estado
-                <div class="form-group">
-                  <select id="sel" name="Estado" value="DF" style="margin-bottom: 10px;" required>
-                    <option value="AC">AC</option>
-                    <option value="AL">AL</option>
-                    <option value="AP">AP</option>
-                    <option value="AM">AM</option>
-                    <option value="BA">BA</option>
-                    <option value="CE">CE</option>
-                    <option value="DF">DF</option>
-                    <option value="ES">ES</option>
-                    <option value="GO">GO</option>
-                    <option value="MA">MA</option>
-                    <option value="MT">MT</option>
-                    <option value="MS">MS</option>
-                    <option value="MG">MG</option>
-                    <option value="PA">PA </option>
-                    <option value="PB">PB </option>
-                    <option value="PR">PR </option>
-                    <option value="PE">PE</option>
-                    <option value="PI">PI</option>
-                    <option value="RJ">RJ </option>
-                    <option value="RN">RN </option>
-                    <option value="RS">RS</option>
-                    <option value="RO">RO</option>
-                    <option value="RR">RR</option>
-                    <option value="SC">SC</option>
-                    <option value="SP">SP</option>
-                    <option value="SE">SE</option>
-                    <option value="TO">TO</option>
-                  </select>
-                  <input id="name" name="nome" type="text" class="form-control" placeholder="Nome" required/>
-                  <input name="email" id="email" type="email" class="form-control" placeholder="E-mail" required/>
-                  <input id="cons" name="consumo" type="number" class="form-control" placeholder="Digite seu consumo, em kWh" required/>
-                  <input id="cons" name="telefone" type="tel" class="form-control" placeholder="Digite seu telefone(opcional)" />
-                  <input id="tarifa" name="tarifa" type="text" class="form-control" placeholder="Digite a tarifa da sua região" required/>
+                  <form method="POST" class="contact2-form validate-form" action="https://formspree.io/victor.silva@enetec.unb.br">
+                    Estado
+                    <div class="form-group">
+                      <!---->
+                      <select id="sel" name="Estado" value="DF" style="margin-bottom: 10px;" required>
+                        <option value="AC">AC</option>
+                        <option value="AL">AL</option>
+                        <option value="AP">AP</option>
+                        <option value="AM">AM</option>
+                        <option value="BA">BA</option>
+                        <option value="CE">CE</option>
+                        <option value="DF">DF</option>
+                        <option value="ES">ES</option>
+                        <option value="GO">GO</option>
+                        <option value="MA">MA</option>
+                        <option value="MT">MT</option>
+                        <option value="MS">MS</option>
+                        <option value="MG">MG</option>
+                        <option value="PA">PA </option>
+                        <option value="PB">PB </option>
+                        <option value="PR">PR </option>
+                        <option value="PE">PE</option>
+                        <option value="PI">PI</option>
+                        <option value="RJ">RJ </option>
+                        <option value="RN">RN </option>
+                        <option value="RS">RS</option>
+                        <option value="RO">RO</option>
+                        <option value="RR">RR</option>
+                        <option value="SC">SC</option>
+                        <option value="SP">SP</option>
+                        <option value="SE">SE</option>
+                        <option value="TO">TO</option>
+                      </select>
 
+                      <div class="wrap-input2 validate-input" data-validate="Não se esqueça de colocar seu nome!">
 
-                  <button class="btn btn-default">
-                    <input type="submit" placeholder="Simular" id="simule" />
-                  </button>
+                        <input id="name" class="input2" name="nome" type="text" class="form-control" placeholder="Nome" required/>
+                      </div>
 
-                  <input type="text" name="_gotcha" style="display:none" />
-                  <input type="hidden" name="_next" value="#" />
-                  <input type="hidden" name="_language" value="pt_BR" />
+                      <div class="wrap-input2 validate-input" data-validate="Não se esqueça de colocar seu e-mail!">
+                        <input name="email" class="input2" id="email" type="email" class="form-control" placeholder="E-mail" required/>
+                      </div>
+                      <div class="wrap-input2 validate-input" data-validate="Não se esqueça de colocar seu consumo!">
+                        <input id="cons" class="input2" name="consumo" type="number" class="form-control" placeholder="Digite seu consumo, em kWh"
+                          required/>
+                      </div>
+                      <div class="wrap-input2 validate-input">
+                        <input id="cons" class="input2" name="telefone" type="tel" class="form-control" placeholder="Digite seu telefone(opcional)"
+                        />
+                      </div>
+                      <div class="wrap-input2 validate-input">
+                        <input id="tarifa" class="input2" name="tarifa" type="text" class="form-control" placeholder="Digite a tarifa da sua região"
+                          required/>
+                      </div>
+                      <div class="container-contact2-form-btn">
+                        <div class="wrap-contact2-form-btn">
+                          <div class="contact2-form-bgbtn"></div>
+                          <button class="contact2-form-btn">
+                            <input type="submit" placeholder="Simular" id="simule" />
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                    <input type="text" name="_gotcha" style="display:none" />
+                    <input type="hidden" name="_next" value="#" />
+                    <input type="hidden" name="_language" value="pt_BR" />
                 </div>
-              </form>
+                </form>
 
-              <div style="display:none" id="div-simulador">
-                <p id="texto-nome"></p>
-                <p id="texto-placas">
+                <div style="display:none" id="div-simulador">
+                  <p id="texto-nome"></p>
+                  <p id="texto-placas">
 
-                </p>
-                <p id="texto-custo">
-                </p>
-                <h3>
-                  Gráfico de kWh x mês
-                </h3>
-                <canvas id="grafico" width="560%" height="200%" style=" border:1px solid #000000;">
-                </canvas>
-                <p>
-                  Lembrando que essas medidas são uma estimativa
-                </p>
-                <a href="../contact/index.html">
-                  Para um projeto exato, fale conosco!
-                </a>
+                  </p>
+                  <p id="texto-custo">
+                  </p>
+                  <h3>
+                    Gráfico de kWh x mês
+                  </h3>
+                  <canvas id="grafico" width="560%" height="200%" style=" border:1px solid #000000;">
+                  </canvas>
+                  <p>
+                    Lembrando que essas medidas são uma estimativa
+                  </p>
+                  <a href="../contact/index.html">
+                    Para um projeto exato, fale conosco!
+                  </a>
+                </div>
               </div>
             </div>
+
+
+
+
+
+
           </div>
-
-
-
-
-
-
         </div>
+      </div>
       </div>
 
       </div>
@@ -287,24 +309,24 @@
     <i class="fa fa-chevron-up"></i>
   </a>
 
-<!-- JavaScript Libraries -->
-<script src="../lib/jquery/jquery.min.js"></script>
-<script src="../lib/jquery/jquery-migrate.min.js"></script>
-<script src="../lib/bootstrap/js/bootstrap.bundle.min.js"></script>
-<script src="../lib/easing/easing.min.js"></script>
-<script src="../lib/wow/wow.min.js"></script>
-<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD8HeI8o-c1NppZA-92oYlXakhDPYR7XMY"></script>
+  <!-- JavaScript Libraries -->
+  <script src="../lib/jquery/jquery.min.js"></script>
+  <script src="../lib/jquery/jquery-migrate.min.js"></script>
+  <script src="../lib/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="../lib/easing/easing.min.js"></script>
+  <script src="../lib/wow/wow.min.js"></script>
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD8HeI8o-c1NppZA-92oYlXakhDPYR7XMY"></script>
 
-<script src="../lib/waypoints/waypoints.min.js"></script>
-<script src="../lib/counterup/counterup.min.js"></script>
-<script src="../lib/superfish/hoverIntent.js"></script>
-<script src="../lib/superfish/superfish.min.js"></script>
+  <script src="../lib/waypoints/waypoints.min.js"></script>
+  <script src="../lib/counterup/counterup.min.js"></script>
+  <script src="../lib/superfish/hoverIntent.js"></script>
+  <script src="../lib/superfish/superfish.min.js"></script>
 
-<!-- Contact Form JavaScript File -->
-<script src="../contactform/contactform.js"></script>
+  <!-- Contact Form JavaScript File -->
+  <script src="../contactform/contactform.js"></script>
 
-<!-- Template Main Javascript File -->
-<script src="../js/main.js"></script>
+  <!-- Template Main Javascript File -->
+  <script src="../js/main.js"></script>
   <!--Start of Tawk.to Script-->
   <script type="text/javascript">
     var Tawk_API = Tawk_API || {}, Tawk_LoadStart = new Date();
@@ -319,7 +341,7 @@
   </script>
   <!--End of Tawk.to Script-->
   <script src="mostrar.js"></script>
-
+  <script src="../js/main2.js"></script>
   <script src="simulador.js"></script>
 </body>
 
