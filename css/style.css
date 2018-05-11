@@ -11,6 +11,8 @@ body {
   background: #fff;
   color: #666666;
   font-family: "Open Sans", sans-serif;
+
+
 }
 
 a {
@@ -582,7 +584,7 @@ height: 100%;
 /* Facts Section
 --------------------------------*/
 #facts {
-  background: #f7f7f7;
+  background: #ffffff;
   padding: 80px 0 60px 0;
 }
 
@@ -693,19 +695,21 @@ height: 100%;
 /* Call To Action Section
 --------------------------------*/
 #call-to-action {
-  background:  rgba(66,120,130) fixed center center;
+  background:  white fixed center center;
   background-size: cover;
   padding: 80px 0;
 }
 
 #call-to-action .cta-title {
-  color: #fff;
+  color: black;
   font-size: 28px;
   font-weight: 700;
 }
 
+
+
 #call-to-action .cta-text {
-  color: #fff;
+  color: black;
 }
 
 @media (min-width: 769px) {
@@ -728,11 +732,11 @@ height: 100%;
   transition: 0.5s;
   margin: 10px;
   border: 2px solid #fff;
-  color: #fff;
+  color:black;
 }
 
 #call-to-action .cta-btn:hover {
-  background: #2dc997;
+  background: white;
   border: 2px solid #2dc997;
 }
 
