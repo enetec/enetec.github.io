@@ -1,8 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="utf-8">
-  <title>Embragea - Consultoria Ambiental</title>
+  <title>ENETEC - Consultoria</title>
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
   <meta content="" name="keywords">
   <meta content="" name="description">
@@ -15,7 +16,7 @@
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Poppins:300,400,500,700" rel="stylesheet">
 
   <!-- Bootstrap CSS File -->
-  <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 
   <!-- Libraries CSS Files -->
   <link href="lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">
@@ -43,199 +44,288 @@
     <div class="container">
 
       <div id="logo" class="pull-left">
-        <a href="#hero"><img id="myImage" src="img/logo-header.png" alt="" title="" /></img></a>
+        <a href="#hero">
+          <img id="myImage" src="img/logo-header.png" alt="" title="" /></img>
+        </a>
         <!-- Uncomment below if you prefer to use a text logo -->
         <!--<h1><a href="#hero">Regna</a></h1>-->
       </div>
 
       <nav id="nav-menu-container">
         <ul class="nav-menu">
-          <li ><a href="index.html">Início</a></li>
-          <li><a href="index.html#about">Sobre nós</a></li>
-          <li><a href="index.html#services">Nossos Serviços</a></li>
-          <li class="menu-active"><a href="#">Portfólio</a></li>
-          <li class="menu-has-children"><a href="">Drop Down</a>
-            <ul>
-              <li><a href="#">Drop Down 1</a></li>
-              <li class="menu-has-children"><a href="#">Drop Down 2</a>
-                <ul>
-                  <li><a href="#">Deep Drop Down 1</a></li>
-                  <li><a href="#">Deep Drop Down 2</a></li>
-                  <li><a href="#">Deep Drop Down 3</a></li>
-                  <li><a href="#">Deep Drop Down 4</a></li>
-                  <li><a href="#">Deep Drop Down 5</a></li>
-                </ul>
-              </li>
-              <li><a href="#">Drop Down 3</a></li>
-              <li><a href="#">Drop Down 4</a></li>
-              <li><a href="#">Drop Down 5</a></li>
-            </ul>
+
+          <li>
+            <a href="index.html">Início</a>
           </li>
-          <li ><a href="contact.html">Contato</a></li>
+          <li class="menu-has-children">
+            <a href="">Serviços</a>
+            <ul>
+              <li class="menu-has-children">
+                <a href="">Fotovoltaica</a>
+                <ul>
+                  <li>
+                    <a href="fotovoltaica/index.html">Simulador de Placas Solares</a>
+                  </li>
+                </ul>
+                <li class="menu-has-children">
+                  <a href="">Instalações</a>
+                  <ul>
+                    <li>
+                      <a href="instalacoes/instala.html">Projetos</a>
+                    </li>
+                    <li>
+                      <a href="instalacoes/spda.html">Sistemas de proteção a Descarga atmosférica</a>
+                    </li>
+                    <li>
+                      <a href="instalacoes/normas.html">Adequação às normas</a>
+                    </li>
+                  </ul>
+
+                  <li class="menu-has-children">
+                    <a href="">Eficiência</a>
+                    <ul>
+                      <li>
+                        <a href="eficiencia/lumino.html">Luminotécnico</a>
+                      </li>
+                      <li>
+                        <a href="eficiencia/analise.html">Análise de conta de luz</a>
+                      </li>
+                      <li>
+                        <a href="eficiencia/analise.html">Análise de qualidade de energia</a>
+                      </li>
+                    </ul>
+                  </li>
+
+            </ul>
+            <li class="menu-has-children">
+              <a href="">E-books</a>
+              <ul>
+                <li>
+                  <a href="landing/index.html">8 ideias de como economizar em casa</a>
+                </li>
+                <li>
+                  <a href="landing2/index.html">Guia de iluminação</a>
+                </li>
+                <li>
+                  <a href="landing/index3.html">Como proteger suas intalações elétricas</a>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a href="port.html">Portfólio</a>
+            </li>
+            <li>
+                <a href="blog">Blog</a>
+            </li>
+            <li>
+              <a href="contact.html">Contato</a>
+            </li>
         </ul>
-      </nav><!-- #nav-menu-container -->
+      </nav>
+      <!-- #nav-menu-container -->
     </div>
-  </header><!-- #header -->
+  </header>
+  <!-- #header -->
 
   <!--==========================
     Hero Section
   ============================-->
-<br><br><br><br>
+  <br>
+  <br>
+  <br>
+  <br>
 
-    <!--==========================
+  <!--==========================
       Portfolio Section
     ============================-->
-    <section id="portfolio">
-      <div class="container wow fadeInUp">
-        <div class="section-header">
-          <h3 class="section-title">Portfolio</h3>
-          <p class="section-description">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque</p>
+  <section id="portfolio">
+    <div id="projetos">
+
+      <div id="modal-header">
+        <span id="btn"></span>
+        <h2 style="text-align:center">Projetos</h2>
+      </div>
+      <div id="body" style="padding:2x 16px">
+      </div>
+
+
+    </div>
+    <div class="container wow fadeInUp">
+      <div class="section-header">
+        <h3 class="section-title">Portfolio</h3>
+        <p class="section-description">Aqui estão nossos principais projetos</p>
+      </div>
+      <div class="row">
+
+        <div class="col-lg-12">
+          <ul id="portfolio-flters">
+            <li data-filter=".filter-app, .filter-card, .filter-logo, .filter-web" class="filter-active">Todos</li>
+            <li data-filter=".filter-app">Eficiência Energética</li>
+            <li data-filter=".filter-card">Energia Solar</li>
+            <li data-filter=".filter-logo">Instalações elétricas</li>
+            <li data-filter=".filter-web">Sistemas de proteção a descargas atmosféricas</li>
+          </ul>
         </div>
-        <div class="row">
+      </div>
+    </div>
 
-          <div class="col-lg-12">
-            <ul id="portfolio-flters">
-              <li data-filter=".filter-app, .filter-card, .filter-logo, .filter-web" class="filter-active">All</li>
-              <li data-filter=".filter-app">App</li>
-              <li data-filter=".filter-card">Card</li>
-              <li data-filter=".filter-logo">Logo</li>
-              <li data-filter=".filter-web">Web</li>
-            </ul>
-          </div>
+    <div class="row" id="portfolio-wrapper">
+      <div class="col-lg-3 col-md-6 portfolio-item filter-app" id="efi1">
+        <img src="img/portfolio/app1.jpg" alt="">
+        <div class="details">
+          <h4>Guarda Presidencial</h4>
+
         </div>
+      </div>
 
-        <div class="row" id="portfolio-wrapper">
-          <div class="col-lg-3 col-md-6 portfolio-item filter-app">
-            <a href="">
-              <img src="img/portfolio/app1.jpg" alt="">
-              <div class="details">
-                <h4>App 1</h4>
-                <span>Alored dono par</span>
-              </div>
-            </a>
-          </div>
+      <div class="col-lg-3 col-md-6 portfolio-item filter-app" id="efi2">
 
-          <div class="col-lg-3 col-md-6 portfolio-item filter-web">
-            <a href="">
-              <img src="img/portfolio/web2.jpg" alt="">
-              <div class="details">
-                <h4>Web 2</h4>
-                <span>Alored dono par</span>
-              </div>
-            </a>
-          </div>
-
-          <div class="col-lg-3 col-md-6 portfolio-item filter-app">
-            <a href="">
-              <img src="img/portfolio/app3.jpg" alt="">
-              <div class="details">
-                <h4>App 3</h4>
-                <span>Alored dono par</span>
-              </div>
-            </a>
-          </div>
-
-          <div class="col-lg-3 col-md-6 portfolio-item filter-card">
-            <a href="">
-              <img src="img/portfolio/card1.jpg" alt="">
-              <div class="details">
-                <h4>Card 1</h4>
-                <span>Alored dono par</span>
-              </div>
-            </a>
-          </div>
-
-          <div class="col-lg-3 col-md-6 portfolio-item filter-card">
-            <a href="">
-              <img src="img/portfolio/card2.jpg" alt="">
-              <div class="details">
-                <h4>Card 2</h4>
-                <span>Alored dono par</span>
-              </div>
-            </a>
-          </div>
-
-          <div class="col-lg-3 col-md-6 portfolio-item filter-web">
-            <a href="">
-              <img src="img/portfolio/web3.jpg" alt="">
-              <div class="details">
-                <h4>Web 3</h4>
-                <span>Alored dono par</span>
-              </div>
-            </a>
-          </div>
-
-          <div class="col-lg-3 col-md-6 portfolio-item filter-card">
-            <a href="">
-              <img src="img/portfolio/card3.jpg" alt="">
-              <div class="details">
-                <h4>Card 3</h4>
-                <span>Alored dono par</span>
-              </div>
-            </a>
-          </div>
-
-          <div class="col-lg-3 col-md-6 portfolio-item filter-app">
-            <a href="">
-              <img src="img/portfolio/app2.jpg" alt="">
-              <div class="details">
-                <h4>App 2</h4>
-                <span>Alored dono par</span>
-              </div>
-            </a>
-          </div>
-
-          <div class="col-lg-3 col-md-6 portfolio-item filter-logo">
-            <a href="">
-              <img src="img/portfolio/logo1.jpg" alt="">
-              <div class="details">
-                <h4>Logo 1</h4>
-                <span>Alored dono par</span>
-              </div>
-            </a>
-          </div>
-
-          <div class="col-lg-3 col-md-6 portfolio-item filter-logo">
-            <a href="">
-              <img src="img/portfolio/logo3.jpg" alt="">
-              <div class="details">
-                <h4>Logo 3</h4>
-                <span>Alored dono par</span>
-              </div>
-            </a>
-          </div>
-
-          <div class="col-lg-3 col-md-6 portfolio-item filter-web">
-            <a href="">
-              <img src="img/portfolio/web1.jpg" alt="">
-              <div class="details">
-                <h4>Web 1</h4>
-                <span>Alored dono par</span>
-              </div>
-            </a>
-          </div>
-
-          <div class="col-lg-3 col-md-6 portfolio-item filter-logo">
-            <a href="">
-              <img src="img/portfolio/logo2.jpg" alt="">
-              <div class="details">
-                <h4>Logo 2</h4>
-                <span>Alored dono par</span>
-              </div>
-            </a>
-          </div>
+        <img src="img/portfolio/app2.jpg" alt="">
+        <div class="details">
+          <h4>ACM</h4>
 
         </div>
 
       </div>
-    </section><!-- #portfolio -->
 
+
+      <div class="col-lg-3 col-md-6 portfolio-item filter-app" id="efi3">
+        <a href="">
+          <img src="img/portfolio/app3.jpg" alt="">
+          <div class="details">
+            <h4>Escola CED</h4>
+          </div>
+      </div>
+
+    </div>
+    </div>
+    <!-- Final Projeto 1-->
+
+
+    <div class="col-lg-3 col-md-6 portfolio-item filter-web">
+      <a href="">
+        <img src="img/portfolio/web2.jpg" alt="">
+        <div class="details">
+          <h4>Web 2</h4>
+          <span>Alored dono par</span>
+        </div>
+      </a>
+    </div>
+
+    <div class="col-lg-3 col-md-6 portfolio-item filter-app">
+      <a href="">
+        <img src="img/portfolio/app3.jpg" alt="">
+        <div class="details">
+          <h4>App 3</h4>
+          <span>Alored dono par</span>
+        </div>
+      </a>
+    </div>
+
+    <div class="col-lg-3 col-md-6 portfolio-item filter-card">
+      <a href="">
+        <img src="img/portfolio/card1.jpg" alt="">
+        <div class="details">
+          <h4>Card 1</h4>
+          <span>Alored dono par</span>
+        </div>
+      </a>
+    </div>
+
+    <div class="col-lg-3 col-md-6 portfolio-item filter-card">
+      <a href="">
+        <img src="img/portfolio/card2.jpg" alt="">
+        <div class="details">
+          <h4>Card 2</h4>
+          <span>Alored dono par</span>
+        </div>
+      </a>
+    </div>
+
+    <div class="col-lg-3 col-md-6 portfolio-item filter-web">
+      <a href="">
+        <img src="img/portfolio/web3.jpg" alt="">
+        <div class="details">
+          <h4>Web 3</h4>
+          <span>Alored dono par</span>
+        </div>
+      </a>
+    </div>
+
+    <div class="col-lg-3 col-md-6 portfolio-item filter-card">
+      <a href="">
+        <img src="img/portfolio/card3.jpg" alt="">
+        <div class="details">
+          <h4>Card 3</h4>
+          <span>Alored dono par</span>
+        </div>
+      </a>
+    </div>
+
+    <div class="col-lg-3 col-md-6 portfolio-item filter-app">
+      <a href="">
+        <img src="img/portfolio/app2.jpg" alt="">
+        <div class="details">
+          <h4>App 2</h4>
+          <span>Alored dono par</span>
+        </div>
+      </a>
+    </div>
+
+    <div class="col-lg-3 col-md-6 portfolio-item filter-logo">
+      <a href="">
+        <img src="img/portfolio/logo1.jpg" alt="">
+        <div class="details">
+          <h4>Logo 1</h4>
+          <span>Alored dono par</span>
+        </div>
+      </a>
+    </div>
+
+    <div class="col-lg-3 col-md-6 portfolio-item filter-logo">
+      <a href="">
+        <img src="img/portfolio/logo3.jpg" alt="">
+        <div class="details">
+          <h4>Logo 3</h4>
+          <span>Alored dono par</span>
+        </div>
+      </a>
+    </div>
+
+    <div class="col-lg-3 col-md-6 portfolio-item filter-web">
+      <a href="">
+        <img src="img/portfolio/web1.jpg" alt="">
+        <div class="details">
+          <h4>Web 1</h4>
+          <span>Alored dono par</span>
+        </div>
+      </a>
+    </div>
+
+    <div class="col-lg-3 col-md-6 portfolio-item filter-logo">
+      <a href="">
+        <img src="img/portfolio/logo2.jpg" alt="">
+        <div class="details">
+          <h4>Logo 2</h4>
+          <span>Alored dono par</span>
+        </div>
+      </a>
+    </div>
+
+    </div>
+
+    </div>
+  </section>
+  <!-- #portfolio -->
+
+  </section>
+  <!-- #portfolio -->
 
   </main>
 
   <!--==========================
     Footer
-  ============================-->
+    ============================-->
   <footer id="footer">
     <div class="footer-top">
       <div class="container">
@@ -245,7 +335,8 @@
 
     <div class="container">
       <div class="copyright">
-        &copy; Copyright <strong>inSite</strong>. All Rights Reserved
+        &copy; Copyright
+        <strong>inSite</strong>. All Rights Reserved
       </div>
       <div class="credits">
         <!--
@@ -254,21 +345,22 @@
           Licensing information: https://bootstrapmade.com/license/
           Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/buy/?theme=Regna
         -->
-        Boostrap & inSite made Tampate 
+        Boostrap & inSite made Tampate
       </div>
     </div>
-  </footer><!-- #footer -->
+  </footer>
+  <!-- #footer -->
 
-  <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
+  <a href="#" class="back-to-top">
+    <i class="fa fa-chevron-up"></i>
+  </a>
 
   <!-- JavaScript Libraries -->
-  <script src="lib/jquery/jquery.min.js"></script>
-  <script src="lib/jquery/jquery-migrate.min.js"></script>
-  <script src="lib/bootstrap/js/bootstrap.bundle.min.js"></script>
   <script src="lib/easing/easing.min.js"></script>
   <script src="lib/wow/wow.min.js"></script>
   <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD8HeI8o-c1NppZA-92oYlXakhDPYR7XMY"></script>
-
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   <script src="lib/waypoints/waypoints.min.js"></script>
   <script src="lib/counterup/counterup.min.js"></script>
   <script src="lib/superfish/hoverIntent.js"></script>
@@ -279,18 +371,19 @@
 
   <!-- Template Main Javascript File -->
   <script src="js/main.js"></script>
-<!--Start of Tawk.to Script-->
-<script type="text/javascript">
-var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
-(function(){
-var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
-s1.async=true;
-s1.src='https://embed.tawk.to/5a50e988d7591465c7068629/default';
-s1.charset='UTF-8';
-s1.setAttribute('crossorigin','*');
-s0.parentNode.insertBefore(s1,s0);
-})();
-</script>
-<!--End of Tawk.to Script-->
+  <!--Start of Tawk.to Script-->
+  <script type="text/javascript">
+    var Tawk_API = Tawk_API || {}, Tawk_LoadStart = new Date();
+    (function () {
+      var s1 = document.createElement("script"), s0 = document.getElementsByTagName("script")[0];
+      s1.async = true;
+      s1.src = 'https://embed.tawk.to/5a50e988d7591465c7068629/default';
+      s1.charset = 'UTF-8';
+      s1.setAttribute('crossorigin', '*');
+      s0.parentNode.insertBefore(s1, s0);
+    })();
+  </script>
+  <!--End of Tawk.to Script-->
 </body>
+
 </html>
