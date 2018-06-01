@@ -20,17 +20,17 @@ tarifa != null )
   var media = 0;
   var canvas = document.getElementById("grafico");
   var ctx = canvas.getContext('2d');
-  //cria eixo y
+  /**cria eixo y
   ctx.beginPath();
 
-  ctx.moveTo(0,canvas.height/2);
+  ctx.moveTo(0,canvas.height/1.07);
 
-  ctx.lineTo(canvas.width,canvas.height/2);
-
+  ctx.lineTo(canvas.width,canvas.height/1.07);
+ 
   ctx.stroke();
 
-ctx.fillText('kWh', 6, 20 );
-  //cria eixo x
+ctx.fillText('kWh', 15, 20,);**/
+  /**cria eixo x
   ctx.beginPath();
 
   ctx.moveTo(10,canvas.height);
@@ -39,7 +39,7 @@ ctx.fillText('kWh', 6, 20 );
 
   ctx.stroke();
 
-  ctx.fillText('mês', canvas.width - 29, canvas.height/2 + 15);
+  ctx.fillText('mês', canvas.width - 29, canvas.height/1.01); **/
 
   //cria o gráfico de energia(kwh)x mês e calcula a média de incidência
   for (i=0; i<12; i++){
@@ -48,23 +48,23 @@ ctx.fillText('kWh', 6, 20 );
     console.log(inc[i])
     //muda a cor dos retângulos
 if (parseInt(inc[i]) < 16){
-  ctx.fillStyle="#ff0000";
+  ctx.fillStyle="rgba(56,146,201,0.8)";
 }
 else if (parseInt(inc[i])  < 20) {
-  ctx.fillStyle="#0000ff";
+  ctx.fillStyle="rgba(56,146,201,0.8)";
 }
 else {
-  ctx.fillStyle="#00ff00";
+  ctx.fillStyle="rgba(56,146,201,0.8)";
 
 
 }
 
 var y=Math.floor (parseInt(inc[i])*16.67/1000*30*8);
-    ctx.fillRect(15+43*i , parseInt(inc[i])*16.67/1000*30*8, 26,-parseInt(inc[i])*16.67/1000*30*8 + canvas.height/2 );
+    ctx.fillRect(28 +43*i , parseInt(inc[i])*16.67/1000*30*8, 26,-parseInt(inc[i])*16.67/1000*30*8 + canvas.height/1.07);
 
-    ctx.fillStyle="#000000"
+    ctx.fillStyle="black"
 
-    ctx.fillText(meses[i],15 + 43*i, canvas.height/2+ 29);
+    ctx.fillText(meses[i],33 + 43*i, canvas.height/1.02);
 
 
     media = parseInt(media,10) + parseInt(inc[i],10);
@@ -106,7 +106,8 @@ console.log(placa);
 document.getElementById("texto-nome").innerHTML="Prezado(a) " + nome + ",";
 document.getElementById("texto-placas").innerHTML="Número de placas necessárias: "+ placa +
 " de  260 watts. A área necessária é de "+ Math.floor(100*placa*2.01)/100 + " metros quadrados.";
-document.getElementById("texto-custo").innerHTML= " O tempo de retorno é entre"+ "4" + "e "+ "6" + " anos."
+document.getElementById("texto-custo").innerHTML= " O tempo de retorno é entre "+ "4 " + "e "+ "6" + " anos."
 document.getElementById("div-simulador").style.display="block";
+document.getElementById("consumo-dinheiro").innerHTML="O Dinheiro economizado em 1 ano é de R$" + Math.floor(consumo*0.52*12) + " a R$" + Math.floor(consumo*0.66*12) 
 
 }
