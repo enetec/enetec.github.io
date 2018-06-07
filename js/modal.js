@@ -1,3 +1,8 @@
+/////////
+
+
+
+
 document.getElementById("foto1").onclick=function(){
 
 document.getElementById("body").innerHTML='<p style="text-align:center">'+'Energia Fotovoltaica'+'</p>' + '<p style:"text-align:center>'+
