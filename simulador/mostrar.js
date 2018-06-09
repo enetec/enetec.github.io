@@ -10,10 +10,10 @@ var inc = [0,0,0,0,0,0,0,0,0,0,0,0];
 
 var meses= ['jan', 'fev', 'mar', 'abr', 'maio', 'jun', 'jul', 'ago', 'set', 'out', 'nov', 'dez']
 
-if(email !=null &&
-nome != null &&
-Estado != null &&
-consumo != 0)
+//if(email !=null &&
+//nome != null &&
+//Estado != null &&
+//consumo != 0)
 {
   var media = 0;
   var canvas = document.getElementById("grafico");
@@ -99,10 +99,17 @@ console.log(placa);
 */
 
 //coloca para o usuário ver
-
+function placas(){
+if (placa =1){
+  return  placa + " placa"
+}
+else{
+  return placa + " placas"
+}
+}
 
 document.getElementById("texto-nome").innerHTML="Prezado(a) " + nome + ",";
-document.getElementById("texto-placas").innerHTML= placa ;
+document.getElementById("texto-placas").innerHTML= placas(placa) + " de 260W." ;
 document.getElementById('texto-area').innerHTML = Math.floor(100*placa*2.01)/100 + " metros quadrados."
 document.getElementById("div-simulador").style.display="block";
 document.getElementById("consumo-dinheiro").innerHTML= "R$" + Math.floor(consumo*0.52*12) + " a R$" + Math.floor(consumo*0.66*12) 
