@@ -1,6 +1,6 @@
 
 
-document.getElementById("simule").onclick=function(){
+document.getElementById("simule").onclick= setTimeout(function(){
 // guarda em registro local os inputs
 window.localStorage.setItem('email',document.getElementById("email").value);
 window.localStorage.setItem('tarifa',document.getElementById("tarifa").value);
@@ -130,4 +130,4 @@ if(input[0].value == "" || input[1].value == "" ||  input[2].value == ""){
 
   alert("Preencha todos os campos por favor");
 }
-}
+},300000)
