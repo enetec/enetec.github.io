@@ -1,14 +1,4 @@
-<<<<<<< HEAD
-//oidufioudsoiuoisdufjosd
-=======
-/////////
-
-
-
-
->>>>>>> 756b33e5dc4d2b0952ae0d14106f58f546edc262
 document.getElementById("foto1").onclick=function(){
-///dsfhidsuyfiudsyfudsyiufydsiuyi
 document.getElementById("body").innerHTML='<p style="text-align:center">'+'Energia Fotovoltaica'+'</p>' + '<p style:"text-align:center>'+
 'A ENETEC foi contratada para realizar um'+
 ' projeto de instalações de placas fotovoltaicas em'+

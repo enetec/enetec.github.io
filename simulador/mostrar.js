@@ -104,10 +104,9 @@ console.log(placa);
 
 
 document.getElementById("texto-nome").innerHTML="Prezado(a) " + nome + ",";
-document.getElementById("texto-placas").innerHTML="Número de placas necessárias: "+ placa +
-" de  260 watts. A área necessária é de "+ Math.floor(100*placa*2.01)/100 + " metros quadrados.";
-document.getElementById("texto-custo").innerHTML= " O tempo de retorno é entre "+ "4 " + "e "+ "6" + " anos."
+document.getElementById("texto-placas").innerHTML= placa ;
+document.getElementById('texto-area').innerHTML = Math.floor(100*placa*2.01)/100 + " metros quadrados."
 document.getElementById("div-simulador").style.display="block";
-document.getElementById("consumo-dinheiro").innerHTML="O Dinheiro economizado em 1 ano é de R$" + Math.floor(consumo*0.52*12) + " a R$" + Math.floor(consumo*0.66*12) 
+document.getElementById("consumo-dinheiro").innerHTML= "R$" + Math.floor(consumo*0.52*12) + " a R$" + Math.floor(consumo*0.66*12) 
 
 }

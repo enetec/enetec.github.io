@@ -29,6 +29,9 @@
   <!-- Main Stylesheet File -->
   <link href="../css/style.css" rel="stylesheet">
 
+	<link rel="stylesheet" type="text/css" href="../css/util2.css">
+	<link rel="stylesheet" type="text/css" href="../css/table.css">
+
   <!-- =======================================================
     Theme Name: Regna
     Theme URL: https://bootstrapmade.com/regna-bootstrap-onepage-template/
@@ -240,26 +243,47 @@
                 </form>
 
                 <div style="display:none" id="div-simulador">
-                  <p id="texto-nome"></p>
-                  <p id="texto-placas">
-
-                  </p>
-                  <p id="texto-custo">
-                  </p>
+                  <br>
+                  <h2 id="texto-nome"></h2>
+                  <br><br>
+                  <div class="table100 ver6 m-b-110">
+                    <table data-vertable="ver6">
+                      <tbody>
+                        <tr class="row100">
+                          <td class="column100 column1" data-column="column1">Número de Placas Necessárias</td>
+                          <td class="column100 column2" data-column="column8" id="texto-placas"></td>
+                        </tr>
+          
+                        <tr class="row100">
+                          <td class="column100 column1" data-column="column1">A área necessária é de</td>
+                          <td class="column100 column8" data-column="column8" id="texto-area"></td>
+                        </tr>
+          
+                        <tr class="row100">
+                          <td class="column100 column1" data-column="column1">O seu investimento terá retorno em</td>
+                          <td class="column100 column8" data-column="column8"> 4 a 6 anos.</td>
+                        </tr>
+          
+                        <tr class="row100">
+                          <td class="column100 column1" data-column="column1">O Dinheiro economizado em 1 ano é de</td>
+                          <td class="column100 column8" data-column="column8" id="consumo-dinheiro"></td>
+                        </tr>
+          
+                      </tbody>
+                    </table>
+                  </div>
                   <h3>
                     Gráfico de kWh gerados por mês
                   </h3>
                   <canvas id="grafico" width="560%" height="200%" style=" border:1px solid #000000;">
                   </canvas>
-                  <p id="consumo-dinheiro">
-                    
-                  </p>
                   <p>
                     Lembrando que essas medidas são uma estimativa
                   </p>
                   <a href="../contact/index.html">
                     Para um projeto exato, fale conosco!
                   </a>
+                
                 </div>
               </div>
             </div>
