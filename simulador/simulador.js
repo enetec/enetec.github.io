@@ -1,12 +1,11 @@
 
 
-document.getElementById("simule").onclick= setTimeout(function(){
+document.getElementById("simule").onclick= function(){
 // guarda em registro local os inputs
-window.localStorage.setItem('email',document.getElementById("email").value);
-window.localStorage.setItem('tarifa',document.getElementById("tarifa").value);
-window.localStorage.setItem('nome',document.getElementById("name").value);
-window.localStorage.setItem('Estado',document.getElementById("sel").value);
-window.localStorage.setItem('consumo',document.getElementById("cons").value);
+window.sessionStorage.setItem('email',document.getElementById("email").value);
+window.sessionStorage.setItem('nome',document.getElementById("name").value);
+window.sessionStorage.setItem('Estado',document.getElementById("sel").value);
+window.sessionStorage.setItem('consumo',document.getElementById("cons").value);
 
 //estima a incidencia em cada Estado, baseado no Atlas:http://www.cresesb.cepel.br/publicacoes/download/Atlas_Solarimetrico_do_Brasil_2000.pdf
 //paginas 33 a 57
@@ -121,7 +120,7 @@ var i,media=0;
 for (i=0;i<12;i++)
 {
 media= media + inc[i];
-window.localStorage.setItem("incidencia"+i,inc[i]);
+window.sessionStorage.setItem("incidencia"+i,inc[i]);
 }
  media=Math.floor(100*media/12)/100;
   var input=document.getElementsByTagName("input");
@@ -130,4 +129,4 @@ if(input[0].value == "" || input[1].value == "" ||  input[2].value == ""){
 
   alert("Preencha todos os campos por favor");
 }
-},300000)
+}

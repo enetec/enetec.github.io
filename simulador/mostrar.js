@@ -1,9 +1,8 @@
 //obtém as variáveis
-var email= window.localStorage.getItem('email')
-var nome = window.localStorage.getItem('nome')
-var Estado = window.localStorage.getItem('Estado')
-var consumo= window.localStorage.getItem('consumo')
-var tarifa= window.localStorage.getItem('tarifa')
+var email= window.sessionStorage.getItem('email')
+var nome = window.sessionStorage.getItem('nome')
+var Estado = window.sessionStorage.getItem('Estado')
+var consumo= window.sessionStorage.getItem('consumo')
 
 
 
@@ -14,8 +13,7 @@ var meses= ['jan', 'fev', 'mar', 'abr', 'maio', 'jun', 'jul', 'ago', 'set', 'out
 if(email !=null &&
 nome != null &&
 Estado != null &&
-consumo != 0 &&
-tarifa != null )
+consumo != 0)
 {
   var media = 0;
   var canvas = document.getElementById("grafico");
@@ -44,7 +42,7 @@ ctx.fillText('kWh', 15, 20,);**/
   //cria o gráfico de energia(kwh)x mês e calcula a média de incidência
   for (i=0; i<12; i++){
 
-    inc[i] = window.localStorage.getItem("incidencia"+ i);
+    inc[i] = window.sessionStorage.getItem("incidencia"+ i);
     console.log(inc[i])
     //muda a cor dos retângulos
 if (parseInt(inc[i]) < 16){
