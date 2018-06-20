@@ -43,7 +43,6 @@ ctx.fillText('kWh', 15, 20,);**/
   for (i=0; i<12; i++){
 
     inc[i] = window.sessionStorage.getItem("incidencia"+ i);
-    console.log(inc[i])
     //muda a cor dos retângulos
 if (parseInt(inc[i]) < 16){
   ctx.fillStyle="rgba(56,146,201,0.8)";
