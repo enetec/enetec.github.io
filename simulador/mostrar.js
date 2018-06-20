@@ -4,7 +4,7 @@ var nome = window.sessionStorage.getItem('nome')
 var Estado = window.sessionStorage.getItem('Estado')
 var consumo= window.sessionStorage.getItem('consumo')
 
-
+console.log(consumo)
 
 var inc = [0,0,0,0,0,0,0,0,0,0,0,0];
 
