@@ -74,7 +74,7 @@ var y=Math.floor (parseInt(inc[i])*16.67/1000*30*8);
 // e que cada placa tem uma área de 2.01 metros quadrados
 
 
-  var placa = Math.floor(3.6*consumo/(media*0.5*30*2.01));
+  var placa = Math.floor(1000*consumo/(260*8*30*0.5));
 
   //tratamento caso o número de placas seja nulo
 i=1;
