@@ -77,15 +77,7 @@ var y=Math.floor (parseInt(inc[i])*16.67/1000*30*8);
   var placa = Math.floor(1000*consumo/(260*8*30*0.5));
 
   //tratamento caso o número de placas seja nulo
-i=1;
-while(placa < 1){
 
-  media = media/i;
-
-  placa = Math.floor(1000*consumo/(260*8*30*0.5));
-console.log(placa);
-  i++;
-}
 /*
   var inv = Math.floor(placa*36/1000) + 1
 
