@@ -77,24 +77,27 @@ var y=Math.floor (parseInt(inc[i])*16.67/1000*30*8);
 
   //tratamento caso o número de placas seja nulo
 
-/*
+
   var inv = Math.floor(placa*36/1000) + 1
 
-  var preço = 780*placa + 5000*inv ;
+  var preco = 650*placa + 3500*inv ;
 
   console.log(inv);
   console.log(placa);
   var payback = 1000*preço/(12*0.6*0.5*8*30*placa*260);
   payback= Math.floor(100* payback)/100
 
-*/
+
 
 //coloca para o usuário ver
 
 document.getElementById("texto-nome").innerHTML="Prezado(a) " + nome + ",";
 document.getElementById("texto-placas").innerHTML= placa + " de 260W" ;
 document.getElementById('texto-area').innerHTML = Math.floor(100*placa*2.01)/100 + " metros quadrados."
+
+document.getElementById("consumo-dinheiro").innerHTML= "R$" + Math.floor(consumo*0.52*12*25) + " a R$" + Math.floor(consumo*0.66*12*25) 
+
+document.getElementById("poupanca").innerHTML= "R$"+ 5*preco ;
 document.getElementById("div-simulador").style.display="block";
-document.getElementById("consumo-dinheiro").innerHTML= "R$" + Math.floor(consumo*0.52*12) + " a R$" + Math.floor(consumo*0.66*12) 
 
 }
