@@ -1,4 +1,4 @@
-
+/* 
     $(document).ready(function(){
          //hides them logo when the page loads
          $("#myImage").hide();
@@ -19,7 +19,7 @@
         header.removeClass('fixed');
         image.hide();
     }
-    });
+    }); */
 
 
 jQuery(document).ready(function( $ ) {
