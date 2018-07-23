@@ -160,7 +160,7 @@ h1, h2, h3, h4, h5, h6 {
   display: table-cell;
   margin: 0;
   padding: 0 10px;
-  text-align: left;
+  text-align: center;
   vertical-align: middle;
   padding-top: 50px;
 }
