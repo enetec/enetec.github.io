@@ -84,7 +84,7 @@ var y=Math.floor (parseInt(inc[i])*16.67/1000*30*8);
 
   console.log(inv);
   console.log(placa);
-  var payback = 1000*preço/(12*0.6*0.5*8*30*placa*260);
+  var payback = 1000*preco/(12*0.6*0.5*8*30*placa*260);
   payback= Math.floor(100* payback)/100
 
 
