@@ -495,7 +495,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 --------------------------------*/
 .section-header .section-title {
   font-size: 32px;
-  color: #111;
+  color: white;
   text-transform: uppercase;
   text-align: center;
   font-weight: 700;
@@ -512,14 +512,14 @@ body.mobile-nav-active #mobile-nav-toggle {
 --------------------------------*/
 #about {
 padding: 80px 0;
-background-image: url(../img/try2.jpg);
+background: #006064;
 }
 
 
 #about .container{
 height: 100%;
- background: rgba(0,0,0,0.5);
-  margin-bottom: 10px;
+ background: white;
+  border-radius:  10px;
 }
 
 #about .about-container .content {
@@ -527,11 +527,10 @@ height: 100%;
 }
 
 #about .about-container .title {
-  color: white;
+  color: #666666;
   font-weight: 700;
   font-size: 32px;
 
-  text-shadow: 0.5px 0.5px 0.5px black;
 }
 
 @media (max-width: 768px) {
@@ -541,9 +540,8 @@ height: 100%;
 }
 
 #about .about-container p {
-  color: white !important;
+  color: #666666;
   line-height: 26px;
-  text-shadow: 0.5px 0.5px 0.5px black;
 
 }
 
@@ -552,7 +550,7 @@ height: 100%;
 }
 
 #about .about-container .icon-box {
-  background: #fff;
+  background: #666666;
   background-size: cover;
   padding: 0 0 30px 0;
 }
@@ -581,6 +579,10 @@ height: 100%;
 #about .about-container .icon-box .title a {
   color: #111;
 }
+#about .about-container .title a {
+  color: #666666;
+}
+
 
 #about .about-container .icon-box .description {
   margin-left: 80px;
