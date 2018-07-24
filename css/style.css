@@ -1069,3 +1069,35 @@ height: 100%;
   color:rgb(31,141,211);
 
 }
+
+.icons {
+  position: fixed;
+  top: 65%;
+  left: 94%;
+  margin-top: -155px;
+  z-index: 22222;
+}
+
+.icons a{
+  text-decoration: none;
+}
+
+.icons a i{
+  display: block;
+    width: 40px;
+    height: 40px;
+    border-radius: 50px;
+    background: #2dc997;
+    padding: 11px 13px;
+    font-size: 18px;
+    margin: 10px 20px;
+    color: #FFF;
+}
+
+@media screen and (max-width:700px){
+
+  .icons{
+    display: none;
+  }
+
+}
