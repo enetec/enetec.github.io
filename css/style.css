@@ -917,11 +917,12 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 #contact .info {
   color: #333333;
+  text-align: center;
 }
 
 #contact .info i {
   font-size: 32px;
-  color: #165b22;
+  color: #2dc997;
   float: left;
 }
 
@@ -1135,4 +1136,16 @@ body.mobile-nav-active #mobile-nav-toggle {
   .icons {
     display: none;
   }
+ /*  #wwp-button {
+    top: 50%;
+    position: relative;
+    left: 15%;
+    right: 15%;
+  } */
+}
+
+#wwp-button {
+  margin-bottom: 20px;
+  background-color: #2dc997;
+  border-color: #2dc997;
 }

@@ -17,6 +17,7 @@
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Poppins:300,400,500,700" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
   <!-- Bootstrap CSS File -->
+  <link href="css/forms.css" rel="stylesheet">
   <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
   <!-- Libraries CSS Files -->
@@ -122,8 +123,8 @@
               <a href="#contact">Contato</a>
             </li>
             <li>
-                <a href="about/index.html">Sobre Nós</a>
-              </li>
+              <a href="about/index.html">Sobre Nós</a>
+            </li>
         </ul>
       </nav>
       <!-- #nav-menu-container -->
@@ -193,8 +194,8 @@
     <section id="services" style="background: rgb(31,141,211)">
       <div class="container wow fadeIn">
         <div class="section-header">
-          <h3 class="section-title" >O que podemos fazer por você</h3>
-          <p style="color:white" class="section-description" >Possuimos uma carta de serviços feita para a sua enconomia, segurança e inovação.</p>
+          <h3 class="section-title">O que podemos fazer por você</h3>
+          <p style="color:white" class="section-description">Possuimos uma carta de serviços feita para a sua enconomia, segurança e inovação.</p>
         </div>
 
         <div class="card-group">
@@ -318,7 +319,7 @@
 
               <div class=" wow fadeInUp">
                 <h4 class="title">
-                  <a  href="">Valorização do seu imóvel</a>
+                  <a href="">Valorização do seu imóvel</a>
                 </h4>
                 <p class="description">Uma pesquisa criada pelo Lawrence Berkeley Lab, divulgada no jornal New York Times, pesquisou 23 mil imóveis
                   em 8 estados americanos, e demonstrou que todos os clientes que adquiriram um sistema solar fotovoltaico
@@ -341,7 +342,7 @@
 
               <div class=" wow fadeInUp" data-wow-delay="0.4s">
                 <h4 class="title">
-                  <a  href="">Economia no seu bolso</a>
+                  <a href="">Economia no seu bolso</a>
                 </h4>
                 <p class="description">Com os diversos problemas de projeto e execução que se encontram em construções, o dono sempre está perdendo
                   energia por falta de um bom planejamento de Eficiência Energética.</p>
@@ -378,7 +379,7 @@
               <div>
                 <i class="fa fa-map-marker"></i>
                 <p>
-                  <br> Brasília DF UnB SG-11 - AT 3/4
+                  Brasília DF UnB SG-11 - AT 3/4
                 </p>
               </div>
 
@@ -393,23 +394,11 @@
                   <br> Diretor de Comercial (Marcos) (61) 9 8165-7690
                   <br>
                 </p>
-                <a class="btn btn-primary" style="margin-bottom: 20px;background-color: rgba(0,226,126); border-color: rgba(0,226,126)" href="https://api.whatsapp.com/send?phone=5561991033751&text=Olá!%20Vim%20pelo%20site.%20Tudo%20Bom?">Fale conosco no WhatsApp
+                <a class="btn btn-primary" id="wwp-button"   href="https://api.whatsapp.com/send?phone=5561991033751&text=Olá!%20Vim%20pelo%20site.%20Tudo%20Bom?">Fale conosco no WhatsApp
                   <br> clicando aqui
                   <br>
                 </a>
               </div>
-            </div>
-
-            <div style="position: relative; left: 22.5%;" class="social-links">
-              <a href="https://www.facebook.com.br/enetec.consultoria" class="facebook">
-                <i class="fa fa-facebook"></i>
-              </a>
-              <a href="https://www.instagram.com/enetec" class="instagram">
-                <i class="fa fa-instagram"></i>
-              </a>
-              <a href="https://pt.linkedin.com/company/enetec-consultoria" class="linkedin">
-                <i class="fa fa-linkedin"></i>
-              </a>
             </div>
 
           </div>
@@ -435,9 +424,12 @@
                     placeholder="Digite aqui sua mensagem"></textarea>
                   <div class="validation"></div>
                 </div>
-                <div class="text-center">
-                  <input class="btn-secondary" style="background-color: #165b22;" type="submit" value="Enviar Mensagem"></input>
-                </div>
+                <center>
+                  <button class="contact2-form-btn" style="background: #2dc997;">
+                    <span> Enviar </span>
+                    <input type="submit" hidden />
+                  </button>
+                </center>
               </form>
             </div>
 

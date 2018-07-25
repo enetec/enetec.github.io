@@ -17,6 +17,7 @@
 
   <!-- Bootstrap CSS File -->
   <link href="../lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="../css/forms.css" rel="stylesheet">
 
   <!-- Libraries CSS Files -->
   <link href="../lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">
@@ -122,8 +123,8 @@
               <a href="#contact">Contato</a>
             </li>
             <li>
-                <a href="../about/index.html">Sobre Nós</a>
-              </li>
+              <a href="../about/index.html">Sobre Nós</a>
+            </li>
         </ul>
       </nav>
       <!-- #nav-menu-container -->
@@ -136,16 +137,16 @@
     ============================-->
   <section id="hero" style="background: url(../img/about-img3.jpg) top center fixed;">
     <div class="icons">
-        <a href="https://www.linkedin.com/company/enetec-consultoria/">
-          <i class="fa fa-linkedin" aria-hidden="true"></i>
-        </a>
-        <a href="https://www.facebook.com/enetec.consultoria/">
-          <i class="fa fa-facebook" aria-hidden="true"></i>
-        </a>
-        <a href="https://www.instagram.com/enetec/">
-          <i class="fa fa-instagram" aria-hidden="true"></i>
-        </a>
-      </div>
+      <a href="https://www.linkedin.com/company/enetec-consultoria/">
+        <i class="fa fa-linkedin" aria-hidden="true"></i>
+      </a>
+      <a href="https://www.facebook.com/enetec.consultoria/">
+        <i class="fa fa-facebook" aria-hidden="true"></i>
+      </a>
+      <a href="https://www.instagram.com/enetec/">
+        <i class="fa fa-instagram" aria-hidden="true"></i>
+      </a>
+    </div>
     <div class="hero-container">
 
       <img src="../img/logo-header.png">
@@ -170,14 +171,12 @@
               <br>
               <br>
 
-              <p 
-                >
+              <p>
                 As normas técnicas de engenharia elétrica visam a evitar problemas e garantir a segurança dos proprietários ou freuqentadores
                 daquele local. Em alguns casos, a não obediência à norma pode acarretar o fechamento do estabelecimento,
                 se descoberto durante uma fiscalização. É o que aconteceu com os food trucks: Um ano atrás, saiu uma resolução
                 dos bombeiros falando que os food que não seguissem a norma perderiam a licença para trabalhar.
-                <p 
-             class="description">
+                <p class="description">
                   A ENETEC analisa se seu estabelecimento está ou não de acordo com a norma, quais pontos é necessário uma mudança e como mudar.
                   Não corra riscos desnecessários!
                   <a href="#contact">
@@ -201,8 +200,8 @@
     <section id="services" style="background: rgb(31,141,211)">
       <div class="container wow fadeIn">
         <div class="section-header">
-          <h3 class="section-title" >O que podemos fazer por você</h3>
-          <p style="color:white" class="section-description" >Possuimos uma carta de serviços feita para a sua enconomia, segurança e inovação.</p>
+          <h3 class="section-title">O que podemos fazer por você</h3>
+          <p style="color:white" class="section-description">Possuimos uma carta de serviços feita para a sua enconomia, segurança e inovação.</p>
         </div>
 
         <div class="card-group">
@@ -281,7 +280,7 @@
               <div>
                 <i class="fa fa-map-marker"></i>
                 <p>
-                  <br> Brasília DF UnB SG-11 - AT 3/4
+                  Brasília DF UnB SG-11 - AT 3/4
                 </p>
               </div>
 
@@ -296,23 +295,11 @@
                   <br> Diretor de Comercial (Marcos) (61) 9 8165-7690
                   <br>
                 </p>
-                <a class="btn btn-primary" style="margin-bottom: 20px;background-color: rgba(0,226,126); border-color: rgba(0,226,126)" href="https://api.whatsapp.com/send?phone=5561991033751&text=Olá!%20Vim%20pelo%20site.%20Tudo%20Bom?">Fale conosco no WhatsApp
+                <a class="btn btn-primary" id="wwp-button"   href="https://api.whatsapp.com/send?phone=5561991033751&text=Olá!%20Vim%20pelo%20site.%20Tudo%20Bom?">Fale conosco no WhatsApp
                   <br> clicando aqui
                   <br>
                 </a>
               </div>
-            </div>
-
-            <div style="position: relative; left: 22.5%;" class="social-links">
-              <a href="https://www.facebook.com.br/enetec.consultoria" class="facebook">
-                <i class="fa fa-facebook"></i>
-              </a>
-              <a href="https://www.instagram.com/enetec" class="instagram">
-                <i class="fa fa-instagram"></i>
-              </a>
-              <a href="https://pt.linkedin.com/company/enetec-consultoria" class="linkedin">
-                <i class="fa fa-linkedin"></i>
-              </a>
             </div>
 
           </div>
@@ -338,9 +325,12 @@
                     placeholder="Digite aqui sua mensagem"></textarea>
                   <div class="validation"></div>
                 </div>
-                <div class="text-center">
-                  <input class="btn-secondary" style="background-color: #165b22;" type="submit" value="Enviar Mensagem"></input>
-                </div>
+                <center>
+                  <button class="contact2-form-btn" style="background: #2dc997;">
+                    <span> Enviar </span>
+                    <input type="submit" hidden />
+                  </button>
+                </center>
               </form>
             </div>
 
